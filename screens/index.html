@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Today I Learned</title>
+</head>
+
+<body>
+    <header class="heads">
+        <div class="logo-title">
+            <img src="logo.png" alt="logo.png" />
+            <h1>Today I Learned</h1>
+        </div>
+        <button class="btn btn-large share-btn">Share A Fact</button>
+    </header>
+
+    <form class="create-fact hide">
+        <input type="text" name="facts" placeholder="Share Your Facts..." required />
+        <span>200</span>
+        <input type="url" name="source" placeholder="Place Your Source..." required />
+        <select required>
+            <option value="">Select a category</option>
+            <option value="technology">Technology</option>
+            <option value="science">science</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+    </form>
+
+    <main>
+        <aside>
+            <ul>
+                <li class="category"><button class="btn btn-all-category">All</button></li>
+                <li class="category"><button class="btn btn-category">Technology</button></li>
+            </ul>
+        </aside>
+
+        <section>
+            <ul class="facts">
+                <li class="fact-container">
+                    <p>React is being developed by Meta (formerly facebook)
+                        <span><a href="#">(Source)</a></span>
+                    </p>
+                    <span class="tag">technology</span>
+
+
+                    <div class="vote-btns">
+                        <button>👍 24</button>
+                        <button>🤯 5</button>
+                        <button>⛔️ 0</button>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="actions.js"></script>
+</body>
+
+</html>
